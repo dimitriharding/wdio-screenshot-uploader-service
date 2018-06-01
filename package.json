@@ -1,0 +1,45 @@
+{
+  "name": "wdio-screenshot-uploader-service",
+  "version": "0.0.0",
+  "description": "WebdriverIO service for uploading screenshots to online storages.",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "xo --fix",
+    "test": "xo && nyc --reporter=html --reporter=text ava -s",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
+  },
+  "keywords": [
+    "webdriverio",
+    "wdio",
+    "errorshots",
+    "screenshots",
+    "uploader",
+    "s3",
+    "aws",
+    "test",
+    "automation",
+    "cloud",
+    "wdio-service"
+  ],
+  "author": "“Dimitri <“dvhharding@gmail.com”>",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "coveralls": "^3.0.0",
+    "dotenv": "^5.0.1",
+    "nyc": "^11.7.3",
+    "request": "^2.87.0",
+    "semantic-release": "^12.4.1",
+    "semantic-release-tamia": "^2.0.1",
+    "travis-deploy-once": "^5.0.0",
+    "xo": "^0.21.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.249.1",
+    "chalk": "^2.4.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
+  }
+}
