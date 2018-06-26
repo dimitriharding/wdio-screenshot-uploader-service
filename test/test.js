@@ -1,11 +1,14 @@
 import test from 'ava';
 
 require('dotenv').config();
+const {stdout} = require('test-console');
 const Uploaders = require('../lib/uploaders');
 const config = require('./fixtures/wdio.config');
 
-test('Upload screenshot', async t => {
+test('Upload screenshot', t => {
 	const uploaders = new Uploaders(config.screenshotUploaderOptions, config, config.capabilities);
-	await uploaders.start();
-	t.log('TO ASSERT');
+	const output = stdout.inspectSync(async () => {
+		await uploaders.start();
+	});
+	t.deepEqual(output, ['\nuploading ']);
 });
