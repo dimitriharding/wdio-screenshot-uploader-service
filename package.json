@@ -1,6 +1,6 @@
 {
   "name": "wdio-screenshot-uploader-service",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "WebdriverIO service for uploading screenshots to online storages.",
   "main": "index.js",
   "scripts": {
