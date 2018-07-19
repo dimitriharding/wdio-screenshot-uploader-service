@@ -4,6 +4,8 @@ WDIO Screenshot Uploader Service
 > A WebdriverIO service for uploading screenshots to online storages
 
 ## Installation
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdimitriharding%2Fwdio-screenshot-uploader-service.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdimitriharding%2Fwdio-screenshot-uploader-service?ref=badge_shield)
+
 ```console
 npm install wdio-screenshot-uploader-service --save-dev
 ```
@@ -51,3 +53,6 @@ export.config = {
 ## Additional Info
 
 For more information on WebdriverIO see the [homepage](http://webdriver.io).
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fdimitriharding%2Fwdio-screenshot-uploader-service.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fdimitriharding%2Fwdio-screenshot-uploader-service?ref=badge_large)
