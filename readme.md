@@ -19,7 +19,7 @@ export.config = {
   // ...
   services: ['screenshot-uploader'],
   screenshotUploaderOptions: {
-      storages: ["amazon-s3"]
+      storages: ["amazon-s3", "azure"]
       storagesInfo: {
           "amazon-s3": {
               accessKeyId: 'topSeCretMa738',
@@ -27,6 +27,11 @@ export.config = {
               bucket: 'screenshot',
               ACL: 'public-read', //optional
               path: 'errorshots' , //optional
+          },
+          "azure": {
+              accountName: 'demo',
+              accountKey: 'XXnkIIsNNdcdcLd',
+              container: 'screenshot' //optional
           }
       }
   }
