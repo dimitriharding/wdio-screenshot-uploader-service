@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.249.1",
+    "azure-storage": "^2.10.2",
     "chalk": "^2.4.1",
     "fs": "0.0.1-security",
     "path": "^0.12.7"
